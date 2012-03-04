@@ -5,4 +5,8 @@ requiring an actual installation. Specifically, this enables
 
 '''
 
-from ..build.libexiv2python import *
+import os
+import sys
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__),
+                                                '..', 'build')))
+from libexiv2python import *
